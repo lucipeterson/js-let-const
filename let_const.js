@@ -25,17 +25,17 @@ const courses = ['Introducing JavaScript',
 				'DOM Scripting By Example'];
 			
 
-var i = courses.length;
+const i = courses.length;
 
 function addNewTeachers(newTeachers) {
 	Array.prototype.push.apply(teachers,newTeachers);
 }
 
 function printTreehouseSummary() {
-  for (var i = 0; i < teachers.length; i+=1) {
+  for (let i = 0; i < teachers.length; i+=1) {
 	 console.log(`${teachers[i].name} teaches ${teachers[i].topicArea}`);
 	}
-  console.log(`Treehouse has ${courses.length} JavaScript courses, and ${teachers.length} Javascript teachers`);
+  console.log(`Treehouse has ${i} JavaScript courses, and ${teachers.length} Javascript teachers`);
 }
 
 addNewTeachers(newTeachers);
